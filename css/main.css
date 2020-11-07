@@ -63,18 +63,22 @@ body
 .mainHeader nav ul 
 {
   margin: 50px 0px  0px 0px;
+  overflow: hidden;
 }
 
-.mainHeader nav ul li
+.mainHeader nav ul li, .dropdown
 {
   display: inline-block;
+  padding: 15px;
 }
- 
-.mainHeader nav ul a{
+
+.mainHeader nav ul a, .dropbtn{
   text-decoration: none;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 16px;
+  margin:  0 5px;
+  cursor: pointer;
 }
 
 li a:hover:not(.active) {
@@ -85,13 +89,35 @@ li a:hover:not(.active) {
   /*background-color: red; */
   background-color: #4CAF50;
 }
+
 .active:hover {
   background-color: red;
 }
 
-/* End nav bar */
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none; 
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
 
-/* End Header */
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #333;
+}
+
+/* End nav bar */
 
 
 /* Start content */
