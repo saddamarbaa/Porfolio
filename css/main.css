@@ -1,325 +1,331 @@
 /* Start Main Rules */
-*{box-sizing: border-box;}
-ul{list-style-type: none;}
 
-a{text-decoration: none;}
-
-body
-{
-  /*background: #DDD; */
-  /* the font family is from google */
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+* {
+    box-sizing: border-box;
 }
 
-.container
-{
-  /*width: 940px; */
-  width: 1200px;
-  margin: 20px auto;
-  background:white;
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /*background: #DDD; */
+    /* the font family is from google */
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+.container {
+    /*width: 940px; */
+    width: 1200px;
+    margin: 20px auto;
+    background: white;
 }
 
 
 /* End  Main Rules */
 
+
 /* Start Header */
 
-.mainHeader
-{
-  background:#F6F6F6;
-  min-height: 100px;
-   /* to fix floting problem for it floted chlidren */
-   overflow: hidden;
-   background-color: #333;
+.mainHeader {
+    min-height: 100px;
+    /* to fix floting problem for it floted chlidren */
+    overflow: hidden;
+    background-color: #333;
 }
+
 
 /* start logo Image */
 
-.mainHeader .logo
-{
-  width: 20%;
-  float: left;
+.mainHeader .logo {
+    width: 20%;
+    float: left;
 }
 
-.mainHeader .logo img
-{
-  width: 100px;
-  margin: 15px 0px 15px 15px;
+.mainHeader .logo img {
+    width: 100px;
+    margin: 15px 0px 15px 15px;
 }
 
 
 /* End  logo Image */
 
+
 /* start nav bar */
 
-.mainHeader nav
-{
-  width: 80%;
-  float: right;
-  font-weight: bold;
+.mainHeader nav {
+    width: 80%;
+    float: right;
+    font-weight: bold;
 }
 
-.mainHeader nav ul 
-{
-  margin: 50px 0px  0px 0px;
-  overflow: hidden;
+.mainHeader nav ul {
+    margin: 50px 0px 0px 0px;
+    overflow: hidden;
 }
 
-.mainHeader nav ul li, .dropdown
-{
-  display: inline-block;
-  padding: 15px;
+.mainHeader nav ul li,
+.dropdown {
+    display: inline-block;
+    padding: 15px;
 }
 
-.mainHeader nav ul a, .dropbtn{
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  margin:  0 5px;
-  cursor: pointer;
+.mainHeader nav ul a,
+.dropbtn {
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+    background-color: #ddd;
+    color: black;
 }
 
 .active {
-  /*background-color: red; */
-  background-color: #4CAF50;
+    /*background-color: red; */
+    background-color: #4CAF50;
 }
 
 .active:hover {
-  background-color: red;
+    background-color: red;
 }
+
 
 /* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
-  display: none; 
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-  
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  display: block;
-  text-align: left;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-  background-color: #333;
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
 }
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #333;
+}
+
 
 /* End nav bar */
 
 
 /* Start content */
 
-.content
-{
-  background:#BBB;
-  /* to fix floting problem for it floted chlidren */
-  overflow: hidden;  
+.content {
+    background: #BBB;
+    /* to fix floting problem for it floted chlidren */
+    overflow: hidden;
 }
+
 
 /* Start sidebar */
 
-.content .sidebar
-{
-  float: right;
-  width: 30%;
-  margin-left: 1%;
-  display: block;
+.content .sidebar {
+    float: right;
+    width: 30%;
+    margin-left: 1%;
+    display: block;
 }
+
 
 /* styling (widget) in the side bar */
 
-.content .sidebar .widget
-{
-  width: 95%;
-  background:#FFF;
-  border: 1px solid #CCC;
-  margin: 10px auto;
-  color: black;
+.content .sidebar .widget {
+    width: 95%;
+    background: #FFF;
+    border: 1px solid #CCC;
+    margin: 10px auto;
+    color: black;
 }
+
 
 /* styling (title) in the side bar */
 
-.content .sidebar  .title
-{
-  background:#222;
-  color:#fff;
-  padding: 5px 0;
-  text-align:center;
-  font-weight: bold;
+.content .sidebar .title {
+    background: #222;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
 }
 
-.content .sidebar .asidebar-links{
-  background-color: #f1f1f1; 
-  border: 1px solid #555;
+.content .sidebar .asidebar-links {
+    background-color: #f1f1f1;
+    border: 1px solid #555;
 }
 
 .content .sidebar .asidebar-links ul li {
-  display: block;
-  color: #000;
-  padding: 3px 0px;
+    display: block;
+    color: #000;
+    padding: 3px 0px;
 }
 
-.content .sidebar .asidebar-links a
-{
-  display: block;
-  color: #000;
-  padding: 8px 16px;
+.content .sidebar .asidebar-links a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
 }
 
 .content .sidebar .asidebar-links a.active {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .content .sidebar .asidebar-links a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+    background-color: #555;
+    color: white;
 }
 
-.content .sidebar .widget .data ol  li
-{
-  list-style: decimal;
+.content .sidebar .widget .data ol li {
+    list-style: decimal;
 }
+
 
 /* styling picutre in the side bar */
 
-.content .sidebar .widget .data img
-{
-  width: 90%;
-  margin: 10px auto;
-  height: 400px;
+.content .sidebar .widget .data img {
+    width: 90%;
+    margin: 10px auto;
+    height: 400px;
+}
 
+.content img:hover {
+    border: 1px solid #777;
 }
 
 
 /* End sidebar*/
 
+
 /* start post(article) */
 
-
-.content .post
-{
-  float: left;
-  width: 69%;
-  height: 500px;
+.content .post {
+    float: left;
+    width: 69%;
+    height: 500px;
 }
 
 .post article {
-  background-color:#f6f6f6;
+    background-color: #f6f6f6;
     border: 1px solid #ccc;
-    margin:20px;
+    margin: 20px;
 }
 
-.post article header{
-  background-color:#E2E2E2;
-  text-align: center;
-  padding-top: 10px;
+.post article header {
+    background-color: #E2E2E2;
+    text-align: center;
+    padding-top: 10px;
 }
 
-.post article section{
-  padding: 10px;
+.post article section {
+    padding: 10px;
 }
 
-.post article section details{
-  margin: 10 0px
+.post article section details {
+    margin: 10 0px
 }
 
-.post article .story
-{
-  overflow: hidden;
-  
+.post article .story {
+    overflow: hidden;
 }
 
-.post article .story .image
-{
-  float: left;
-  padding: 15px;
-  border: 1px solid black;
-  text-align: center;
-  margin-right:20px;
+.post article .story .image {
+    float: left;
+    padding: 15px;
+    border: 1px solid black;
+    text-align: center;
+    margin-right: 20px;
 }
 
-.post article section.picures
-{
-  overflow: hidden;
-
-
-}
-.post article section.picures .pic
-{
-  width: 48%;
-  float: right;
-  margin-left: 2%;
+.post article section.picures {
+    overflow: hidden;
 }
 
-.post article section.picures img
-{
-  width: 100%;
+.post article section.picures .pic {
+    width: 48%;
+    float: right;
+    margin-left: 2%;
 }
- 
+
+.post article section.picures img {
+    width: 100%;
+}
+
+
 /* End of  post */
+
 
 /* End content */
 
+
 /* Start Footer */
 
-footer
-{
-  background:#CCC;
-  min-height: 100px;
+footer {
+    background: #CCC;
+    min-height: 100px;
 }
+
 
 /* footer information */
 
-footer .footerinfo
-{
-  background:#676767;
-  overflow: hidden;
+footer .footerinfo {
+    background: #676767;
+    overflow: hidden;
 }
 
-footer .footerinfo .Box
-{
-  width: 30%;
-  float: right;
-  margin-left: 3%;
-  margin-bottom: 3px;
+footer .footerinfo .Box {
+    width: 30%;
+    float: right;
+    margin-left: 3%;
+    margin-bottom: 3px;
 }
 
-footer .footerinfo ul
-{
-  margin: 10px 10px 0 0;
-}
-footer .footerinfo ul li
-{
-  padding-bottom: 5px;
-}
-footer .footerinfo h3
-{
-  border:1px solid #555;
+footer .footerinfo ul {
+    margin: 10px 10px 0 0;
 }
 
-  
+footer .footerinfo ul li {
+    padding-bottom: 5px;
+}
+
+footer .footerinfo h3 {
+    border: 1px solid #555;
+}
+
+
 /* footer Cop right */
 
-footer .copright
-{
-  background:#333;
-  padding: 10px 0;
-  color:#999;
-  text-align: center;
+footer .copright {
+    background: #333;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    line-height: 1.2em;
 }
+
 
 /* End Footer */
