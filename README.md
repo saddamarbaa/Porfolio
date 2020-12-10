@@ -1,2 +1,2 @@
 # Porfolio
-This Project for Building Simple porfolio with basic html and css
+This Project for Building Simple portfolio Layout with basic HTML and CSS
